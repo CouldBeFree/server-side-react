@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 
-export default () => (
+export default ({ statusCode }) => (
     <Layout>
-        <p>This page can't be found</p>
+        {statusCode ? `Could not load user data. Status Code ${statusCode}` : `This page can't be found`}
     </Layout>
 )
