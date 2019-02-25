@@ -12,6 +12,7 @@ export default class About extends Component {
             user: data
         }
     }
+
     render () {
         const { user } = this.props;
 
